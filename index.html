@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>STE.AM</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+    <link href="css/event.css" rel="stylesheet">  
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+   <body>
+  <!--  Header -->
+     <header class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 top">
+               <div class="container">
+                  <div class="row martop">   
+                  <!-- Navigation   -->            
+                       <div class="col-lg-8 col-lg-offset-1 col-md-12  col-sm-12 col-xs-10 menunav">
+                             <nav class="navbar navbar-default backgrmenu">
+                                 <div class="container-fluid">
+                                     <div class="navbar-header">
+                                          <button type="button" class="navbar-toggle collapsed menubutton" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                          </button>
+                                          <a href="#"><img src="image/logo.png" class="logo" alt="STE.AM"></a>
+                                        </div>
+                                        <!-- Collect the nav links, forms, and other content for toggling -->
+                                        <div class="collapse navbar-collapse" id="menu">
+                                          <ul class="nav navbar-nav">
+                                            <li><a href="#">Home<span class="sr-only">(current)</span></a></li>
+                                            <li><a href="#">Get Started <span class="sr-only">(current)</span></a></li>
+                                            <li><a href="#">How it works<span class="sr-only">(current)</span></a></li>
+                                            <li><a href="#">Pricing<span class="sr-only">(current)</span></a></li>
+                                            <li><a href="#">Support<span class="sr-only">(current)</span></a></li>
+                                          </ul>            
+                                       </div><!-- /.navbar-collapse -->
+                                  </div><!-- /.container-fluid -->
+                               </nav>
+                        </div>        
+
+                        <div class="col-lg-1 col-md-6 col-sm-6  col-xs-12 center">
+                          <button type="button" class="btn btn-default buttonlog">Login/Signup</button>
+                        </div>
+                        <div class="col-lg-1 col-md-6 col-sm-6  col-xs-12 center">
+                        <button type="button" class="btn btn-default buttonget">Get Listed Today</button>
+                        </div>
+                    </div>
+                 </div>
+                  <div class="row">
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 textalign">
+                          <div class="headname">Find the <span class="headnameb">next event</span> you'll want <span class="headnameb">to attend</span>.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+        </header>     
+      <!-- Content -->
+       <div class="conteiner-fluid">
+          <div class="row">
+             <div class="col-lg-12 col-md-12 hidden-sm hidden-xs">
+                 <div id="map_canvas" style="height: 400px">
+                    </div>
+                    <p class="numbermap">9657 <br><span class="global">GLOBAL LIVE EVENTS</span>
+                    </p>
+             </div>
+         </div>
+     </div>    
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-lg-12 line">        
+          </div>
+      </div>
+    </div>   
+    <div class="container marginhot">
+        <div class="row">
+           <div class="col-lg-3">
+              <ul class="submenu">
+                  <li class="hot"><a href="#">Hot Events</a></li>
+                  <li class="treding"><a href="#">Treding Events</a></li>
+             </ul>
+           </div>
+            <div class="col-lg-5 act">
+                 <input type="text" class="form-control textin" placeholder="Act Big! Ultimate Music Festival">
+            </div>
+            <div class="col-lg-4 col-md-12 act2">
+                  <input type="text" class="form-control location" placeholder="Your location">
+                  <img src="image/calendar.png" class="calendar" alt="calendar">
+                 <img src="image/gps.png" class="gps" alt="gps">
+            </div>
+        </div> 
+    </div>
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-lg-12 greyblock">
+                      <div class="container">
+                           <div class="row">
+                               <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                                   <div class="container-fluid">
+                                          <div class="row">
+                                             <div class="col-lg-12 image">
+                                                       <div id="mask1" class="img-resp">                                                                     
+                                                       </div>
+                                                       <ul class="spriteicon">
+                                                         <a href="#"><li class="facebook"></li></a>
+                                                         <span class="spanicon">Aug 17, 2013  02:00pm - 08:00pm IST </span>
+                                                         <a href="#"><li class="heart"></li></a>
+                                                       </ul>                                                    
+                                                        <h3 class="col-lg-12">Act Big! Ultimate Music Festival!</h3>
+                                                        <h4 class="col-lg-12">Pattichion Municipal Amphitheater</h4>
+                                                        <h5 class="col-lg-12">Nikolaou G. Dimitriou Street, Larnaca, 6031, Cyprus</h5>
+                                                        <p class="col-lg-12">An evening of bowling be geeks for geeks. Nothing more, nothing less
+                                                        (adorn bowling shirts - funny shoes provided) Follow @TeamLebowski or #Geek-Bowling
+                                                        on Twitter for up to the minute news...</p>                                                                                        
+                                                       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 wrapgrey space"><img src="image/male.png" alt="male">
+                                                          <p class="percent"><span class="first">13</span> <span class="perc">%</span><br><span class="male">MALE</span></p>
+                                                       </div>
+                                                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 wrapgrey wrapgrey2"><img src="image/female.png" alt="female">
+                                                         <p class="percent"><span class="first">87</span> <span class="perc">%</span><br><span class="male">FEMALE</span></p>
+                                                      </div>
+                                               </div>  
+                                         </div>                   
+                                     </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                                   <div class="container-fluid">
+                                          <div class="row">
+                                             <div class="col-lg-12 image">
+                                                 <div id="mask2" class="img-resp">                                                               
+                                                 </div>
+                                                     <ul class="spriteicon2">
+                                                           <a href="#"><li class="facebook"></li></a>
+                                                           <span class="spanicon">Aug 17, 2013  02:00pm - 08:00pm IST </span>
+                                                           <a href="#"><li class="heart"></li></a>
+                                                      </ul>
+                                                      <h3 class="col-lg-12"> Summer Art Club - <br>Week 1/3</h3>
+                                                      <h4 class="col-lg-12">Fun Factory Wildeshausen</h4>
+                                                      <h5 class="col-lg-12">Am Umspannwerk 7, Wildeshausen, 27793, Germany</h5>
+                                                      <p class="col-lg-12">Join us for creative holiday activities - this week with Ashley&Letty! Let yours 8-13 year olds
+                                                       to join to help burn some of that pent-up creative energy on our fun artist led workshops. You can book all 
+                                                       three days.</p>      
+                                                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 wrapgrey space"><img src="image/male.png" alt="">
+                                                         <p class="percent"><span class="first">25</span> <span class="perc">%</span><br><span class="male">MALE</span></p>
+                                                      </div>
+                                                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 wrapgrey wrapgrey2"><img src="image/female.png" alt="">
+                                                         <p class="percent"><span class="first">75</span> <span class="perc">%</span><br><span class="male">FEMALE</span></p>
+                                                      </div>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                  </div>                
+                                  <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                                      <div class="container-fluid">
+                                           <div class="row">
+                                               <div class="col-lg-12 image">
+                                                 <div id="mask3" class="img-resp">                                                    
+                                                 </div>
+                                                     <ul class="spriteicon">
+                                                         <a href="#"><li class="facebook"></li></a>
+                                                         <span class="spanicon">Aug 17, 2013  02:00pm - 08:00pm IST </span>
+                                                         <a href="#"><li class="heart"></li></a>
+                                                     </ul>                                                  
+                                                      <h3 class="col-lg-12">Bocca Footbar @ Vama <br>Veche</h3>
+                                                      <h4 class="col-lg-12">Pattichion Municipal Amphitheater</h4>
+                                                      <h5 class="col-lg-12">Nikolaou G. Dimitriou Street, Larnaca, 6031, Cyprus</h5>
+                                                      <p class="col-lg-12">An evening of bowling be geeks for geeks. Nothing more, nothing less
+                                                              (adorn bowling shirts - funny shoes provided) Follow @TeamLebowski or #Geek-Bowling
+                                                              on Twitter for up to the minute news...</p>                                                  
+                                                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 wrapgrey space">
+                                                          <img src="image/male.png" alt="">
+                                                          <p class="percent"><span class="first">62</span> <span class="perc">%</span><br><span class="male">MALE</span></p>
+                                                      </div>
+                                                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 wrapgrey wrapgrey2"><img src="image/female.png" alt="">
+                                                          <p class="percent"><span class="first">38</span> <span class="perc">%</span><br><span class="male">FEMALE</span></p>
+                                                      </div>
+                                                 </div>   
+                                             </div> 
+                                       </div>   
+                                  </div>               
+                                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="container-fluid">
+                                             <div class="row">
+                                                 <div class="col-lg-12 image">
+                                                    <div id="mask4" class="img-resp">                                                              
+                                                    </div> 
+                                                         <ul class="spriteicon2">
+                                                             <a href="#"><li class="facebook"></li></a>
+                                                             <span class="spanicon">Aug 17, 2013  02:00pm - 08:00pm IST </span>
+                                                             <a href="#"><li class="heart"></li></a>
+                                                         </ul>                                                       
+                                                          <h3 class="col-lg-12">Faringdon Community Sports <br>
+                                                          College - Summer - Week 2</h3>
+                                                          <h4 class="col-lg-12">University of Netherlands Antilles</h4>
+                                                          <h5 class="col-lg-12">Sta Maria Willeamstad, Curacao, AN5999, Netherlands</h5>
+                                                          <p class="col-lg-12">Practical Self-service Bl with PowerPivot for Excel SQL Server MVP and Business Intelligence Architect Bill Pearson leads this full-day, hands-on introduction to using PowerPivot for...</p>                                     
+                                                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 wrapgrey space">
+                                                              <img src="image/male.png" alt="">
+                                                              <p class="percent"><span class="first">55</span> <span class="perc">%</span><br><span class="male">MALE</span></p>
+                                                         </div>
+                                                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 wrapgrey wrapgrey2"><img src="image/female.png" alt="">
+                                                          <p class="percent"><span class="first">45</span> <span class="perc">%</span><br><span class="male">FEMALE</span></p>
+                                                       </div>
+                                                 </div>   
+                                             </div> 
+                                          </div>   
+                                     </div>                
+                                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                                       <div class="container-fluid">
+                                               <div class="row">
+                                                   <div class="col-lg-12 image">
+                                                      <div id="mask5"class="img-resp">                                                              
+                                                      </div>
+                                                           <ul class="spriteicon">
+                                                               <a href="#"><li class="facebook"></li></a>
+                                                               <span class="spanicon">Aug 17, 2013  02:00pm - 08:00pm IST </span>
+                                                               <a href="#"><li class="heart"></li></a>
+                                                           </ul>                                                               
+                                                            <h3 class="col-lg-12">Training EN - OpenERP 7.0 <br>Functional training</h3>
+                                                            <h4 class="col-lg-12">Boulevard Barcelona</h4>
+                                                            <h5 class="col-lg-12">La Rambla 27, Barcelona, 08002, Spain</h5>
+                                                            <p class="col-lg-12">THE BOILER ROOM is coming to BCN the Boiler Room, un nuevo concepto de fiesta que aterriza en
+                                                            Barcelona, una noche fresca y muy energetica con una programacion de Dj's de...</p>                                              
+                                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 wrapgrey space"><img src="image/male.png" alt="">
+                                                              <p class="percent"><span class="first">31</span> <span class="perc">%</span><br><span class="male">MALE</span></p>
+                                                            </div>
+                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 wrapgrey wrapgrey2"><img src="image/female.png" alt="">
+                                                               <p class="percent"><span class="first">69</span> <span class="perc">%</span><br><span class="male">FEMALE</span></p>
+                                                            </div>
+                                                     </div>   
+                                               </div> 
+                                            </div>   
+                                         </div>              
+                                        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                                           <div class="container-fluid">
+                                               <div class="row">
+                                                   <div class="col-lg-12 image">
+                                                      <div id="mask6" class="img-resp">                                                              
+                                                      </div>
+                                                           <ul class="spriteicon">
+                                                               <a href="#"><li class="facebook"></li></a>
+                                                               <span class="spanicon">Aug 17, 2013  02:00pm - 08:00pm IST </span>
+                                                               <a href="#"><li class="heart"></li></a>
+                                                            </ul>                                                          
+                                                            <h3 class="col-lg-12">Band Workshop with Artists <br>in Residence Super Tenants</h3>
+                                                            <h4 class="col-lg-12">Culture Club Revelin</h4>
+                                                            <h5 class="col-lg-12">Sv.Dominika 3, Dubrovnik, 20 000, Croatia</h5>
+                                                            <p class="col-lg-12">An evening of bowling be geeks for geeks. Nothing more, nothing less
+                                                            (adorn bowling shirts - funny shoes provided) Follow @TeamLebowski or #Geek-Bowling
+                                                            on Twitter for up to the minute news...</p>
+                                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 wrapgrey space"><img src="image/male.png" alt="">
+                                                                <p class="percent"><span class="first">57</span> <span class="perc">%</span><br><span class="male">MALE</span></p>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 wrapgrey wrapgrey2"><img src="image/female.png" alt="">
+                                                              <p class="percent"><span class="first">43</span> <span class="perc">%</span><br><span class="male">FEMALE</span></p>
+                                                            </div>                                                                
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                           </div>
+                                     </div>
+                                  </div>            
+                                  <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textalign"><input class="btn btn-default load" type="submit" value="Load Me"></div>
+                                  </div>
+                             </div>
+                          </div>
+                       </div> 
+                      <!-- Footer -->
+                      <footer class="conteiner-fluid">
+                        <div class="row backgrfooter">
+                            <div class="col-lg-12">  
+                                <div class="container">
+                                    <div class="row martop">                 
+                                        <div class="col-lg-11 col-lg-offset-1 col-md-12  col-sm-12 col-xs-10">
+<!-- Footer menu -->
+                                             <nav class="navbar navbar-default backgrmenu">
+                                                 <div class="container-fluid">
+                                                    <!-- Brand and toggle get grouped for better mobile display -->
+                                                     <div class="navbar-header">
+                                                      <button type="button" class="navbar-toggle collapsed menubutton" data-toggle="collapse" data-target="#footermenu" aria-expanded="false">
+                                                        <span class="sr-only">Toggle navigation</span>
+                                                        <span class="icon-bar"></span>
+                                                        <span class="icon-bar"></span>
+                                                        <span class="icon-bar"></span>
+                                                      </button>
+                                                       <!-- <a href="#"><img src="image/logo.png" class="logo" alt="STE.AM"></a> -->
+                                                       </div>
+                                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                                      <div class="collapse navbar-collapse" id="footermenu">
+                                                          <ul class="nav navbar-nav">
+                                                            <li  class="lihome"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+                                                            <li><a href="#">About eco<span class="sr-only">(current)</span></a></li>
+                                                            <li><a href="#">How it works<span class="sr-only">(current)</span></a></li>
+                                                            <li><a href="#">Industries<span class="sr-only">(current)</span></a></li>
+                                                            <li><a href="#">Features<span class="sr-only">(current)</span></a></li>
+                                                            <li><a href="#">Pricing<span class="sr-only">(current)</span></a></li>
+                                                            <li><a href="#">Faq's<span class="sr-only">(current)</span></a></li>
+                                                            <li><a href="#">Privacy policy<span class="sr-only">(current)</span></a></li>
+                                                            <li><a href="#">Blog<span class="sr-only">(current)</span></a></li>
+                                                            <li><a href="#">Terms of service<span class="sr-only">(current)</span></a></li>
+                                                          </ul>            
+                                                      </div><!-- /.navbar-collapse -->
+                                                  </div><!-- /.container-fluid -->
+                                               </nav>
+                                        </div>      
+                                   </div>        
+                                  <div class="row">
+                                    <div class="col-lg-12 linein">                                      
+                                    </div>
+                                  </div>
+                                  <!-- Hidden menu -->
+                                  <div class="row xsicon">
+                                      <div class="row">
+                                            <div class="hidden-lg hidden-md hidden-sm col-xs-12">
+                                                <ul class="sprite textalign">
+                                                  <a href="#" class="hidden-lg hidden-md hidden-sm col-xs-12 texalign"><li class="fc"></li></a>
+                                                  <a href="#" class="hidden-lg hidden-md hidden-sm col-xs-12"><li class="tw"></li></a>
+                                                  <a href="#" class="hidden-lg hidden-md hidden-sm col-xs-12"><li class="in"></li></a>
+                                                  <a href="#" class="hidden-lg hidden-md hidden-sm col-xs-12"><li class="play"></li></a>
+                                                  <a href="#" class="hidden-lg hidden-md hidden-sm col-xs-12"><li class="dots"></li></a>
+                                                  <a href="#" class="hidden-lg hidden-md hidden-sm col-xs-12"><li class="rss"></li></a>
+                                                </ul>                                      
+                                             </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 copyright">
+                                               <p class="rights">&copy 2013 <span class="steam">steam</span>. All Rights Reserved. Design by <span class="steam">woof</span>.<p>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs textleft xsicon">
+                                              <ul class="sprite">
+                                                              <a href="#"><li class="fc"></li></a>
+                                                              <a href="#"><li class="tw"></li></a>
+                                                              <a href="#"><li class="in"></li></a>
+                                                              <a href="#"><li class="play"></li></a>
+                                                              <a href="#"><li class="dots"></li></a>
+                                                              <a href="#"><li class="rss"></li></a>
+                                                           </ul>
+                                            </div>  
+                                      </div>
+                                  </div>
+                              </div>
+                         </div>  
+                     </footer>
+
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+            <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+            <script>
+                  
+                  function initialize() {     
+                    var myLatlng = new google.maps.LatLng(28.613164, 77.289609);
+                    var myOptions = {
+                      zoom: 15,
+                      center: {lat: 28.613164, lng: 77.289609},
+                      scrollwheel: false,
+                      icon: image,
+                      styles: styleArray
+                      }
+                      var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
+                        }
+                    var styleArray = [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
+
+                  // var myLatlng = new google.maps.LatLng(28.613164, 77.289609);
+                  var myLatlng = new google.maps.LatLng(28.618838, 77.291689);
+                  var mapOptions = {
+                      zoom: 13,
+                      scrollwheel: false,
+                      styles: styleArray,
+                      icon: image,
+                      center: myLatlng
+                  }
+                  var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+
+
+                  var image = new google.maps.MarkerImage('image/marker.png',      
+                      new google.maps.Size(27, 35),      
+                      new google.maps.Point(0,0),      
+                      new google.maps.Point(0, 32));
+
+                  var contentString = '<div id="content"><img class="mapimg" src="image/contentimg1.png" alt="" width=85% height=85% /><br><span class="maph3">Act Big! Ultimate Music Festival</span><br><span class="maph4">Pattichion Municipal Amphitheater</span><br><span class="maph5">Nikolaou G. Dimitriou Street, Larnaca, 6031, Cyprus</span></div>';
+
+                  
+                  var infowindow = new google.maps.InfoWindow({
+                      content: contentString
+                    });
+
+                  var marker = new google.maps.Marker({
+                      position: {lat: 28.618844, lng: 77.296844},
+                      icon: 'image/marker.png',
+                      map: map,
+                      title: 'Ram Kumar Gautam Marg'
+                    });
+                    // google.maps.event.addListener(marker, 'click', function() {
+                    //   infowindow.open(map,marker);
+                    // });
+
+
+                  var infowindow = new google.maps.InfoWindow({
+                      content: contentString
+                    });
+                  var marker = new google.maps.Marker({
+                      position: {lat: 28.613164, lng: 77.289609},
+                      icon: 'image/marker.png',
+                      map: map,
+                      title: 'Patparganj Rd'
+                    });
+                    // google.maps.event.addListener(marker, 'click', function() {
+                    //   infowindow.open(map,marker);
+                    // });
+
+
+                  var infowindow = new google.maps.InfoWindow({
+                      content: contentString
+                    });
+                  var marker = new google.maps.Marker({
+                      position: {lat: 28.614552, lng: 77.294787},
+                      icon: 'image/marker.png',
+                      map: map,
+                      title: 'Sanjay Lake'
+                    });
+                    // google.maps.event.addListener(marker, 'click', function() {
+                    //   infowindow.open(map,marker);
+                    // });
+
+
+                   var infowindow = new google.maps.InfoWindow({
+                      content: contentString
+                    });
+                   var marker = new google.maps.Marker({
+                      position: {lat: 28.630998, lng: 77.218719},
+                      icon: 'image/marker.png',
+                      map: map,
+                      title: 'Palika Bazaar'
+                    });
+                    // google.maps.event.addListener(marker, 'click', function() {
+                    //   infowindow.open(map,marker);
+                    // });
+
+
+                 var infowindow = new google.maps.InfoWindow({
+                      content: contentString
+                    });
+                var marker = new google.maps.Marker({
+                      position: {lat: 28.613029, lng: 77.229469},
+                      icon: 'image/marker.png',
+                      map: map,
+                      title: 'India Gate'
+                    });
+                    // google.maps.event.addListener(marker, 'click', function() {
+                    //   infowindow.open(map,marker);
+                    // });
+
+
+                  var infowindow = new google.maps.InfoWindow({
+                      content: contentString
+                    });
+                  var marker = new google.maps.Marker({
+                      position: {lat: 28.628234, lng: 77.327222},
+                      icon: 'image/marker.png',
+                      map: map,
+                      title: 'India Gate'
+                    });
+                    google.maps.event.addListener(marker, 'click', function() {
+                      infowindow.open(map,marker);
+
+                    });                   
+
+                  // To add the marker to the map, call setMap();
+                  marker.setMap(map);
+                  google.maps.event.addDomListener(window, 'load', initMap);
+            </script>
+
+      </body>
+</html>
